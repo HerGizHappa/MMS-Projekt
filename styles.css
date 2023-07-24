@@ -1,15 +1,15 @@
 /* Füge den folgenden CSS-Code hinzu, um die Cocktails und Container zu stylen */
 
-/* Setzt die Hintergrundfarbe auf Schwarz und die Schriftfarbe auf Weiß für den gesamten Inhalt */
+/* Setze die Hintergrundfarbe auf Schwarz und die Schriftfarbe auf Weiß für den gesamten Inhalt */
 body {
-  background-color:#000;
-  color: #fff;
+  background-color: black;
+  color: white;
   font-family: Arial, sans-serif;
 }
 
 /* Füge den folgenden CSS-Code hinzu, um den Header zu stylen */
 header {
-  background-color: #000;
+  background-color: #121212;
   padding: 20px;
   text-align: center;
   position: relative;
@@ -71,14 +71,9 @@ h1 {
   color: #666;
 }
 
-/* Cocktails Container untereinander anzuordnen */
-.cocktail-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* ... (vorheriger CSS-Code) ... */
 
-
+/* Füge den folgenden CSS-Code hinzu, um den Bereich zu verschönern und den Titel zu zentrieren */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +84,6 @@ main {
 }
 
 section {
-  width: 100%;
   flex-basis: 30%;
   margin-bottom: 40px;
   background-color: #121212;
@@ -97,14 +91,14 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Zentriere den Titel innerhalb des Bereichs */
 section h2 {
   text-align: center;
   padding: 20px 0;
   color: #fff;
 }
 
-
+/* Füge den folgenden CSS-Code hinzu, um die Zutatenliste zu stylen */
 .ingredient-list {
   display: flex;
   flex-wrap: wrap;
@@ -124,7 +118,7 @@ section h2 {
 .animated-image,
 .api-text {
   padding: 20px;
-  background-color: #000;
+  background-color: black;
 }
 
 .animated-image {
@@ -135,7 +129,7 @@ section h2 {
   flex: 1;
 }
 
-/*die Zutatenlisten waagerecht anzuzeigen */
+/* Füge den folgenden CSS-Code hinzu, um die Zutatenlisten waagerecht anzuzeigen */
 .ingredient-list {
   display: flex;
   flex-wrap: wrap;
@@ -197,8 +191,13 @@ section h2 {
 /* Optionale Stilisierung für die einzelnen Elemente innerhalb des Containers */
 #cocktailsanimation .cocktail-show li,
 #cocktailsanimation .cocktailsmagicpic li,
-#cocktailsanimation .button_drinkme button 
+#cocktailsanimation .button_drinkme button {
+  /* Füge hier deine Stilisierung für die einzelnen Inhalts-Elemente ein, wenn benötigt */
+  /* Zum Beispiel: margin, padding, flex, etc. */
+}
 
+/* Füge den folgenden CSS-Code hinzu, um den Footer zu stylen */
+/* Füge den folgenden CSS-Code hinzu, um den Footer zu verschönern */
 footer {
   background-color: #121212;
   text-align: center;
