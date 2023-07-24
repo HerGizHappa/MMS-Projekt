@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocktail Maker</title>
+  <meta name="description" content="Erstelle leckere Cocktails mit dem Cocktail Maker. Finde die besten Rezepte für Pina Colada, Mojito und Gin Tonic.">
+  <meta name="keywords" content="Cocktail, Pina Colada, Mojito, Gin Tonic, Rezepte, Cocktail Maker">
+  <meta name="author" content="Unser Name">
+
+  <!-- Füge eine externe Schriftart von Google Fonts hinzu -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Cocktail Maker</h1>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="dropdown-content" id="dropdown">
+          <ul>
+            <li><a href="#pina-colada">Pina Colada</a></li>
+            <li><a href="#mojito">Mojito</a></li>
+            <li><a href="#gin-tonic">Gin Tonic</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Container für Pina Colada -->
+    <section id="pina-colada">
+      <div class="cocktail-info">
+        <h2>Pina Colada</h2>
+        <ul class="ingredient-list">
+          <li>Pineapple slice (for decoration)<img src="pineapple.png" alt="pineapple"></li>
+          <li>Pineapple juice</li>
+          <li>Coconut milk <img src="cocosmilk.png" alt="cocosmilk"></li>
+          <li>Cream <img src="cream.png" alt="cream"></li>
+          <li>White rum</li>
+          <li>Ice cubes <img src="icecube.png" alt="icecube"></li>
+        </ul>
+      </div>
+	    <div class="animated-image">
+        <!-- Hier kommt das animierte Bild von Pina Colada -->
+         <img src="cocktail1_pinaColada.jpg" alt="Pina Colada" id="pina-colada-image">
+        <div class="floating-ingredients">
+          <img src="icons/pineapple.png" alt="pineapple" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/cocosmilk.png" alt="cocosmilk" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/cream.png" alt="cream" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/icecube.png" alt="icecube" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+        </div>
+      </div>
+      <div class="animated-image">
+        <!-- Hier kommt das animierte Bild von Pina Colada -->
+        <img src="cocktail1_pinaColada.jpg" alt="Pina Colada">
+      </div>
+      <div class="api-text">
+        <!-- Hier kommt der API-Text von Pina Colada -->
+        <p>Dies ist ein Dummy-Text für Pina Colada.</p>
+      </div>
+    </section>
+
+    <!-- Container für Mojito -->
+    <section id="mojito">
+      <div class="cocktail-info">
+        <h2>Mojito</h2>
+        <ul class="ingredient-list">
+          <li>White rum</li>
+          <li>Mint <img src="mint.png" alt="mint"></li>
+          <li>lime <img src="lime.png" alt="lime"></li>
+          <li>Brown cane sugar</li>
+          <li>Mineral water</li>
+          <li>crushed ice <img src="crushedice.jpg" alt="crushed ice"></li>
+        </ul>
+      </div>
+      <div class="animated-image">
+        <!-- Hier kommt das animierte Bild von Mojito -->
+            <img src="cocktail_mojito.jpg" alt="Mojito" id="mojito-image">
+        <div class="floating-ingredients">
+          <img src="icons/white-rum.png" alt="white rum" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/mint.png" alt="mint" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/lime.png" alt="lime" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/brown-cane-sugar.png" alt="brown cane sugar" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/mineral-water.png" alt="mineral water" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/crushed-ice.png" alt="crushed ice" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+        </div>
+      </div>
+      <div class="api-text">
+        <!-- Hier kommt der API-Text von Mojito -->
+        <p>Dies ist ein Dummy-Text für Mojito.</p>
+      </div>
+    </section>
+
+    <!-- Container für Gin Tonic -->
+    <section id="gin-tonic">
+      <div class="cocktail-info">
+        <h2>Gin Tonic</h2>
+        <ul class="ingredient-list">
+          <li>Gin</li>
+          <li>Tonic water</li>
+          <li>Lemon slice ( for decoration) <img src="lemon.png" alt="lemon"></li>
+          <li>Ice cubes <img src="icecube.png" alt="icecube"></li>
+        </ul>
+      </div>
+      <div class="animated-image">
+        <!-- Hier kommt das animierte Bild von Gin Tonic -->
+            <img src="cocktail_ginTonic.jpg" alt="Gin Tonic" id="gin-tonic-image">
+        <div class="floating-ingredients">
+          <img src="icons/gin.png" alt="gin" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/tonic-water.png" alt="tonic water" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/lemon.png" alt="lemon" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+          <img src="icons/icecube.png" alt="icecube" class="floating-icon" onmouseover="floatIngredient(this)" onmouseout="stopFloat(this)">
+        </div>
+      </div>
+      <div class="api-text">
+        <!-- Hier kommt der API-Text von Gin Tonic -->
+        <p>Dies ist ein Dummy-Text für Gin Tonic.</p>
+      </div>
+    </section>
+    <section id="cocktailsanimation">
+      <div class="cocktail-show">
+        <li><a href="#pina-colada">Pina Colada</a></li>
+        <li><a href="#mojito">Mojito</a></li>
+        <li><a href="#gin-tonic">Gin Tonic</a></li>
+      </div>
+      <div class="cocktailsmagicpic">
+        <!-- Füge bitte hier das animierte Bild von Pinacolada erst mal voll nach button leer ein! 
+		Ändere jeweils die Namenbezeichnung des Bildes-->
+        <li><img id="PinaColada_magic" src="cocktail_pinaColada_magic.jpg" alt="Pina Colada-magic"></li>
+        <!-- Hier kommt das animierte Bild von Mojito erst mal voll nach button leer! -->
+        <li><img id="Mojito_magic" src="cocktail_Mojito_magic.jpg" alt="Mojito-magic"></li>
+        <!-- Hier kommt das animierte Bild von Gin Tonic erst mal voll nach button leer! -->
+        <li><img id="GinTonic_magic" src="cocktail_ginTonic_magic.jpg" alt="Gin Tonic-magic"></li>
+      </div>
+      <div class="button_drinkme">
+        <!-- Hier kommt der Button rein der die Getränke leeren soll!-->
+        <button id="drinkButton1">Drink Me</button>
+        <button id="drinkButton2">Drink Me</button>
+        <button id="drinkButton3">Drink Me</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Cocktail Maker</p>
+    <div class="footer-links">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">Kontakt</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
