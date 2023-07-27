@@ -158,8 +158,9 @@ section h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  width: 1em;
-  height:1em;
+  width: 2em;
+  height:2em;
+  margin-inline: 1em;
 }
 
 .floating-icon {
