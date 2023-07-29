@@ -133,10 +133,6 @@ section h2 {
 
 /*die Zutatenlisten waagerecht anzuzeigen */
 .ingredient-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
   justify-content: left;
 }
 
