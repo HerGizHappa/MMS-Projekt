@@ -137,14 +137,13 @@ section h2 {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  justify-content: center;
+  justify-content: left;
 }
 
 .ingredient-list li {
   color: white;
   margin: 5px;
   white-space: nowrap;
-  float:left;
 }
 /*die schwebenden Zutaten zu animieren */
 
