@@ -178,7 +178,7 @@ section h2 {
 
 .animated-image img:hover {
   cursor: pointer;
-  transform: scale(0.7); /* Vergrößern des Bildes beim Hover */
+  transform: scale(1.0); /* Vergrößern des Bildes beim Hover */
 }
 
 
