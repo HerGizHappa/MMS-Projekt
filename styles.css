@@ -120,7 +120,7 @@ section h2 {
 .animated-image,
 .api-text {
   padding: 20px;
-  background-color: #000;
+  background-color: #827d6d;
 }
 
 .animated-ingredients {
@@ -131,9 +131,9 @@ section h2 {
   flex: 1;
 }
 
-/*die Zutatenlisten waagerecht anzuzeigen */
 .ingredient-list {
   justify-content: left;
+
 }
 
 .ingredient-list li {
