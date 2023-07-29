@@ -173,6 +173,7 @@ section h2 {
 .animated-image img {
   max-width: 100%;
   transition: transform 0.5s ease;
+  position: center;
 }
 
 .animated-image img:hover {
