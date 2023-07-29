@@ -116,11 +116,16 @@ section h2 {
   white-space: nowrap;
 }
 
-.cocktail-info,
-.animated-image,
-.api-text {
+.cocktail-info {
   padding: 20px;
   background-color: #827d6d;
+}
+.animated-image {
+ background-color:#262626;
+}
+.api-text {
+  padding: 20px;
+  background-color: #666;
 }
 
 .animated-ingredients {
