@@ -75,7 +75,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+
 }
 
 
@@ -120,8 +124,7 @@ section h2 {
 .cocktail-info {
   padding: 20px;
   background-color: #827d6d;
-  border-top-left-radius: 13%;
-  border-top-right-radius: 13%;
+  border-radius: 20%;
 }
 .animated-image {
  background-color:#262626;
@@ -129,8 +132,7 @@ section h2 {
 .api-text {
   padding: 20px;
   background-color: #827d6d;
-  border-bottom-left-radius: 13%;
-  border-bottom-right-radius: 13%;
+  border-radius: 20%;
 }
 
 .animated-ingredients {
