@@ -151,6 +151,9 @@ section h2 {
   box-sizing: border-box;
 
 }
+ul {
+  list-style-type: circle;
+}
 
 /*die schwebenden Zutaten zu animieren */
 
