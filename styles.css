@@ -125,6 +125,7 @@ section h2 {
   padding: 20px;
   background-color: #827d6d;
   border-radius: 50px 20px;
+  opacity:0.8;
 }
 .animated-image {
  background-color:#262626;
