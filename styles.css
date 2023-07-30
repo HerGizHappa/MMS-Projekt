@@ -135,10 +135,6 @@ section h2 {
   border-radius: 20px 50px;
 }
 
-.animated-ingredients {
-  flex: 1;
-}
-
 .api-text {
   flex: 1;
 }
@@ -153,7 +149,7 @@ section h2 {
 }
 ul {
   list-style-type: "♥ ";
-  
+
 }
 
 /*die schwebenden Zutaten zu animieren */
