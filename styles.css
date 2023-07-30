@@ -157,6 +157,14 @@ ul {
   box-sizing: border-box;
 }
 
+#floating-ingredientsmj {
+  transform: translate(-30%, -150%);
+  float: right; 
+  width: 15%; 
+  margin-right: 0; 
+  padding: 10px; 
+  box-sizing: border-box;
+}
 .floating-icon {
   width: 50px;
   margin-bottom: 5em;
