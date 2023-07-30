@@ -132,7 +132,7 @@ section h2 {
 .api-text {
   padding: 20px;
   background-color: #827d6d;
-  border-radius: 20px, 50px;
+  border-radius: 20px 50px;
 }
 
 .animated-ingredients {
