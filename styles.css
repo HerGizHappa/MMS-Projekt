@@ -124,7 +124,10 @@ section h2 {
 .cocktail-info {
   padding: 20px;
   background-color: #827d6d;
-  border-radius: 20%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 .animated-image {
  background-color:#262626;
@@ -132,7 +135,10 @@ section h2 {
 .api-text {
   padding: 20px;
   background-color: #827d6d;
-  border-radius: 20%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 
 .animated-ingredients {
