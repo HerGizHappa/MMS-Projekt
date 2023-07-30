@@ -124,10 +124,7 @@ section h2 {
 .cocktail-info {
   padding: 20px;
   background-color: #827d6d;
-  border-top-left-radius: 30%;
-  border-top-right-radius: 30%;
-  border-bottom-left-radius: 30%;
-  border-bottom-right-radius: 30%;
+  border-radius: 50px 20px;
 }
 .animated-image {
  background-color:#262626;
