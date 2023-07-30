@@ -107,11 +107,11 @@ section h2 {
 
 
 .ingredient-list {
-  display: flex;
+  display: float;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 20px;
 }
 
