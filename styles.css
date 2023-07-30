@@ -108,8 +108,6 @@ section h2 {
   padding: 0;
   justify-content: center;
   margin-bottom: 20px;
-  border-top-left-radius: 13%;
-  border-top-right-radius: 13%;
 }
 
 .ingredient-list li {
@@ -121,6 +119,10 @@ section h2 {
 .cocktail-info {
   padding: 20px;
   background-color: #827d6d;
+  border-top-left-radius: 13%;
+  border-top-right-radius: 13%;
+  border-bottom-left-radius: 13%;
+  border-bottom-right-radius: 13%;
 }
 .animated-image {
  background-color:#262626;
@@ -128,8 +130,6 @@ section h2 {
 .api-text {
   padding: 20px;
   background-color: #827d6d;
-  border-bottom-left-radius: 13%;
-  border-bottom-right-radius: 13%;
 }
 
 .animated-ingredients {
