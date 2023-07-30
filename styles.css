@@ -152,7 +152,8 @@ section h2 {
 
 }
 ul {
-  list-style-type: circle;
+  list-style-type: "♥ ";
+  
 }
 
 /*die schwebenden Zutaten zu animieren */
