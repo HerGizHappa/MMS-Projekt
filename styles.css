@@ -128,14 +128,7 @@ section h2 {
 }
 .animated-image {
  background-color:#262626;
- text-align:left;
- float: left;
- width: 32%; 
- margin-right: 1%; 
- padding: 20px;
- box-sizing: border-box;
 }
-
 .api-text {
   padding: 20px;
   background-color: #827d6d;
@@ -147,6 +140,11 @@ section h2 {
 }
 .ingredients{
   text-align:left;
+  float: left;
+  width: 32%; 
+  margin-right: 1%; 
+  padding: 20px;
+  box-sizing: border-box;
 
 }
 ul {
@@ -157,7 +155,7 @@ ul {
 /*die schwebenden Zutaten zu animieren */
 .floating-ingredients {
   transform: translate(-50%, -50%);
-  float: left; 
+  float: right; 
   width: 32%; 
   margin-right: 0; 
   padding: 20px; 
