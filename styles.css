@@ -142,17 +142,11 @@ section h2 {
 .api-text {
   flex: 1;
 }
-
-.ingredient-list {
-  justify-content: right;
+.ingredients{
+  text-align:left;
 
 }
 
-.ingredient-list li {
-  color: white;
-  margin: 5px;
-  white-space: nowrap;
-}
 /*die schwebenden Zutaten zu animieren */
 
 
