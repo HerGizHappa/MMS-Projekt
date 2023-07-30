@@ -149,7 +149,7 @@ ul {
 
 /*die schwebenden Zutaten zu animieren */
 #floating-ingredientspc {
-  transform: translate(-30%, -150%);
+  transform: translate(-30%, -115%);
   float: right; 
   width: 15%; 
   margin-right: 0; 
