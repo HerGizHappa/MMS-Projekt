@@ -136,7 +136,7 @@ section h2 {
 }
 
 .api-text {
-  flex: 1;
+ margin-bottom: 0;; 
 }
 .ingredients{
   text-align:left;
