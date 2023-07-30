@@ -153,17 +153,13 @@ ul {
 }
 
 /*die schwebenden Zutaten zu animieren */
-
-
 .floating-ingredients {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  width: 2em;
-  height:2em;
-  margin:1em;
+  float: right; 
+  width: 32%; 
+  margin-right: 0; 
+  padding: 20px; 
+  box-sizing: border-box;
 }
 
 .floating-icon {
