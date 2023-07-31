@@ -16,6 +16,12 @@ function stopFloat(ingredient) {
   ingredient.style.animation = "";
 }
 
+
+
+
+
+
+//Ende Api.
 // JavaScript-Code für die Aktion, wenn der Button geklickt wird.
 document.getElementById("drinkButton1").addEventListener("click", function() {
   // Holen Sie sich das Bild-Element durch seine ID.
