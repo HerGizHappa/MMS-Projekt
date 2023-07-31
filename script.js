@@ -22,11 +22,11 @@ document.getElementById("drinkButton1").addEventListener("click", function() {
   var magic_bilder = document.getElementById("PinaColada_magic");
 
   // Überprüfen Sie das aktuelle Bild und ändern Sie die Bildquelle basierend darauf.
-  if (magic_bilder.src.endsWith("cocktail_pinaColada_magic.jpg")) {
-    magic_bilder.src = "newmagicpina.jpg"; // Pfad zum neuen Bild, z. B. bild2.jpg
+  if (magic_bilder.src.endsWith("IMG_4410.JPG")) {
+    magic_bilder.src = "pcleer.JPG"; // Pfad zum neuen Bild, z. B. bild2.jpg
     magic_bilder.alt = "newmagic_pina"; // Alternativer Text für das neue Bild
   } else {
-    magic_bilder.src = "cocktail_pinaColada_magic.jpg"; // Pfad zum ursprünglichen Bild
+    magic_bilder.src = "IMG_4410.JPG"; // Pfad zum ursprünglichen Bild
     magic_bilder.alt = "Pina Colada-magic"; // Alternativer Text für das ursprüngliche Bild
   }
 });
@@ -39,7 +39,7 @@ document.getElementById("drinkButton2").addEventListener("click", function() {
   var magic_bilder = document.getElementById("Mojito_magic");
 
   // Überprüfen Sie das aktuelle Bild und ändern Sie die Bildquelle basierend darauf.
-  if (magic_bilder.src.endsWith("cocktail_Mojito_magic.jpg")) {
+  if (magic_bilder.src.endsWith("IMG_4622.JPG")) {
     magic_bilder.src = "newmagicmojito.jpg"; // Pfad zum neuen Bild, z. B. bild2.jpg
     magic_bilder.alt = "newmagic_mojito"; // Alternativer Text für das neue Bild
   } else {
