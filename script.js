@@ -143,9 +143,6 @@ function displayDataGinTonic(dataGinTonic) {
 
 }
 
-
-
-
 /* allgemeiner JavaScript Aufruf für alle Events */
 
 document.addEventListener("DOMContentLoaded", function() {
