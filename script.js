@@ -17,12 +17,6 @@ function stopFloat(ingredient) {
   ingredient.style.animation = "";
 }
 
-// Funktion, um die API-Texte einzublenden
-function showApiText(cocktailId) {
-  var apiText = document.querySelector("#" + cocktailId + " .api-text");
-  apiText.style.display = "block";
-}
-
 /* Beispiel-Anfrage für den Drink margarita */
 
 function fetchDataPinaColada() {
@@ -43,11 +37,6 @@ function displayDataPinaColada(dataPinaColada) {
   const description = document.createElement("p");
   description.innerHTML = dataPinaColada[0].strInstructions;
   drinkDiv.appendChild(description);
-}
-
-function hideApiText(cocktailId) {
-  var apiText = document.querySelector("#" + cocktailId + " .api-text");
-  apiText.style.display = "none";
 }
 
 // JavaScript-Code für die Aktion, wenn der Button geklickt wird.
