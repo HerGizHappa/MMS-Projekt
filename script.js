@@ -98,11 +98,11 @@ document.getElementById("drinkButton1").addEventListener("click", function() {
   // Holt sich Bild-Element durch seine ID.
   var magic_bilder = document.getElementById("PinaColada_magic");
 
-  if (magic_bilder.src.endsWith("cocktail_pinaColada_magic.JPG")) {
-    magic_bilder.src = "newmagicpina.JPG"; // Pfad zum neuen Bild, z. B. bild2.jpg
+  if (magic_bilder.src.endsWith("pic/cocktail_pinaColada_magic.JPG")) {
+    magic_bilder.src = "pic/newmagicpina.JPG"; // Pfad zum neuen Bild, z. B. bild2.jpg
     magic_bilder.alt = "newmagic_pina"; // Alternativer Text für das neue Bild
   } else {
-    magic_bilder.src = "cocktail_pinaColada_magic.JPG"; // Pfad zum ursprünglichen Bild
+    magic_bilder.src = "pic/cocktail_pinaColada_magic.JPG"; // Pfad zum ursprünglichen Bild
     magic_bilder.alt = "Pina Colada-magic"; // Alternativer Text für das ursprüngliche Bild
   }
 });
@@ -112,11 +112,11 @@ document.getElementById("drinkButton2").addEventListener("click", function() {
   // Holt sich Bild-Element durch seine ID.
   var magic_bilder = document.getElementById("Mojito_magic");
 
-  if (magic_bilder.src.endsWith("cocktail_Mojito_magic.JPG")) {
-    magic_bilder.src = "newmagicmojito.JPG"; // Pfad zum neuen Bild, z. B. bild2.jpg
+  if (magic_bilder.src.endsWith("pic/cocktail_Mojito_magic.JPG")) {
+    magic_bilder.src = "pic/newmagicmojito.JPG"; // Pfad zum neuen Bild, z. B. bild2.jpg
     magic_bilder.alt = "newmagic_mojito"; // Alternativer Text für das neue Bild
   } else {
-    magic_bilder.src = "cocktail_Mojito_magic.JPG"; // Pfad zum ursprünglichen Bild
+    magic_bilder.src = "pic/cocktail_Mojito_magic.JPG"; // Pfad zum ursprünglichen Bild
     magic_bilder.alt = "Mojito-magic"; // Alternativer Text für das ursprüngliche Bild
   }
 });
