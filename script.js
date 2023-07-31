@@ -16,6 +16,38 @@ function stopFloat(ingredient) {
   ingredient.style.animation = "";
 }
 
+// Funktion, um die Zubereitung für einen einzelnen Cocktail abzurufen und anzuzeigen
+function getCocktailInstructions(cocktailName, containerId) {
+  fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailName}`)
+    .then(response => response.json())
+    .then(data => {
+      const cocktail = data.drinks[0];
+      const container = document.getElementById(containerId);
+
+      if (cocktail) {
+        const instructions = cocktail.strInstructions;
+        const cocktailInstructions = `
+          <h2>${cocktail.strDrink}</h2>
+          <p>${instructions}</p>
+        `;
+        container.innerHTML = cocktailInstructions;
+      } else {
+        container.innerHTML = "<p>Zubereitungsinformationen für diesen Cocktail sind nicht verfügbar.</p>";
+      }
+    })
+    .catch(error => {
+      console.error(`Fehler beim Abrufen der Zubereitungsinformationen für ${cocktailName}:`, error);
+    });
+}
+
+// Aufruf der Funktionen, um die Zubereitung für die einzelnen Cocktails abzurufen, wenn das DOM geladen ist
+document.addEventListener("DOMContentLoaded", () => {
+  getCocktailInstructions("Pina Colada", "drink-pinacolada");
+  getCocktailInstructions("Mojito", "drink-mojito");
+  getCocktailInstructions("Gin Tonic", "drink-gintonic");
+});
+
+
 // JavaScript-Code für die Aktion, wenn der Button geklickt wird.
 document.getElementById("drinkButton1").addEventListener("click", function() {
   // Holen Sie sich das Bild-Element durch seine ID.
