@@ -17,27 +17,8 @@ function stopFloat(ingredient) {
   ingredient.style.animation = "";
 }
 
-/* Beispiel-Anfrage für den Drink margarita */
 
-function fetchDataPinaColada() {
-  fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=pina%20colada')
-  .then(res => res.json())
-  .then(dataPinaColada => {
-      displayDataMargarita(dataPinaColada.drinks);
-      console.log(dataPinaColada.drinks);
-  })
-  .catch(error => {
-      console.log('Abruf hat nicht funktioniert:', error)
-  })
-}
 
-function displayDataPinaColada(dataPinaColada) {
-  const drinkDiv = document.getElementById("drink-pina colada");
-
-  const description = document.createElement("p");
-  description.innerHTML = dataPinaColada[0].strInstructions;
-  drinkDiv.appendChild(description);
-}
 
 // JavaScript-Code für die Aktion, wenn der Button geklickt wird.
 document.getElementById("drinkButton1").addEventListener("click", function() {
