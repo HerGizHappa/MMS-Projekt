@@ -132,7 +132,7 @@ section h2 {
   color:white;
 }
 
-.drink-mojito{
+.drink-mojito {
   padding: 20px;
   background-color: #827d6d;
   border-radius: 20px 50px;
@@ -140,13 +140,18 @@ section h2 {
   color:white;
 }
 
-.drink-gintonic{
+.drink-gintonic {
   padding: 20px;
   background-color: #827d6d;
   border-radius: 20px 50px;
   margin-bottom: 5em;
   color:white;
 }
+img {
+  width: 30vw;
+  height: 100%;
+}
+
 .ingredients{
   text-align:left;
   float: left;
