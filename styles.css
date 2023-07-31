@@ -16,9 +16,9 @@ body {
 }
 
 .header-brand {
-  position:sticky;
-  height: 2em;
-  width: 1.5em;
+  position:-webkit-sticky;
+  height: 10em;
+  width:1em;
 }
 
 h1 {
