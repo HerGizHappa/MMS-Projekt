@@ -1,14 +1,20 @@
-/* Füge den folgenden CSS-Code hinzu, um die Cocktails und Container zu stylen */
 
-/* Setzt die Hintergrundfarbe auf Schwarz und die Schriftfarbe auf Weiß für den gesamten Inhalt */
 body {
   background-color:#000;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Füge den folgenden CSS-Code hinzu, um den Header zu stylen */
 
+/* Header */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -17,7 +23,7 @@ body {
 
 .header-brand {
   position:-webkit-sticky;
-  height: 10em;
+  height: 3em;
   width:1em;
 }
 
@@ -206,7 +212,7 @@ ul {
   50% { transform: translateY(-20px); }
 }
 
-/* Füge den folgenden CSS-Code hinzu, um die animierten Bilder zu stylen */
+/* animierten Bilder */
 .animated-image img {
   max-width: 100%;
   transition: transform 0.5s ease;
@@ -216,9 +222,7 @@ ul {
   cursor: pointer;
   transform: scale(1.1); /* Vergrößern des Bildes beim Hover */
 }
-
-
-/* Füge den folgenden CSS-Code hinzu, um die Bilder der Cocktails zu stylen */
+/* Bilder */
 .cocktail-images img {
   max-width: 100%;
 }
@@ -230,10 +234,37 @@ ul {
   display: flex;
 }
 
-/* Optionale Stilisierung für die einzelnen Elemente innerhalb des Containers */
+
 #cocktailsanimation .cocktail-show li,
 #cocktailsanimation .cocktailsmagicpic li,
 #cocktailsanimation .button_drinkme button 
+
+.button_drinkme {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button_drinkme button {
+  background-color: #FF5733;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.button_drinkme button:hover {
+  background-color: #E64A2E;
+}
+
 
 footer {
 	background-color: #262626;
