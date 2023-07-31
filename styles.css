@@ -128,11 +128,22 @@ section h2 {
   padding: 20px;
   background-color: #827d6d;
   border-radius: 20px 50px;
-  
+  margin-bottom: 5em;
+
 }
 
-.api-text {
- margin-bottom: 14em; 
+.drink-mojito{
+  padding: 20px;
+  background-color: #827d6d;
+  border-radius: 20px 50px;
+  margin-bottom: 5em;
+}
+
+.drink-gintonic{
+  padding: 20px;
+  background-color: #827d6d;
+  border-radius: 20px 50px;
+  margin-bottom: 5em;
 }
 .ingredients{
   text-align:left;
