@@ -22,10 +22,10 @@ header {
 }
 
 .logo {
-  position:-webkit-sticky;
-  height: 9em;
-  width:8em;
-}
+    position:-webkit-sticky;
+    height: 92px;
+    width: 102px;
+  }
 
 h1 {
   font-size: 36px;
