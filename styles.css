@@ -21,11 +21,11 @@ header {
   align-items: center;
 }
 
-.logo {
-    position:-webkit-sticky;
-    height: 92px;
-    width: 102px;
-  }
+.header-brand {
+  position:-webkit-sticky;
+  height: 92px;
+  width: 102px;
+}
 
 h1 {
   font-size: 36px;
@@ -192,6 +192,7 @@ ul {
   padding: 10px; 
   box-sizing: border-box;
 }
+
 #floating-ingredientsgt{
   transform: translate(-30%, -150%);
   float: right; 
@@ -241,30 +242,26 @@ ul {
 .button_drinkme {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .button_drinkme button {
-  background-color: #FF5733;
-  color: white;
-  padding: 14px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 10px 20px;
   font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background-color: #827d6d;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 10px;
   transition: background-color 0.3s;
-  margin: 20px;
-  margin-left: 11em;
 }
+
 
 .button_drinkme button:hover {
-  background-color: #E64A2E;
+  background-color: #666;
 }
-
 
 footer {
 	background-color: #262626;
@@ -276,10 +273,6 @@ footer {
   text-align: center;	
   font-size: small;
 }
-.impressum-container{
-  background-color: #262626;
-  padding: 10px;
-}
 
 .footer-links a {
   text-decoration: none;
@@ -287,6 +280,18 @@ footer {
   margin: 0 10px;
 }
 
-.footer-links a:hover {
-  color: #666;
+/* Styling für den Impressum-Container */
+.impressum-container {
+  background-color: #827d6d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.impressum-container h2 {
+  margin-bottom: 20px;
+}
+
+.impressum-container p {
+  font-size: 14px;
 }
