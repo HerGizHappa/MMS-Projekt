@@ -55,23 +55,6 @@ function floatIngredient(ingredient) {
   ingredient.style.animation = "float 3s ease-in-out infinite";
 }
 
-// Function to handle the click event on floating ingredient icons
-function floatIngredient(element) {
-  // Get the parent container of the clicked icon (floating-ingredientspc in this case)
-  const parentContainer = element.parentElement;
-
-  // Get the corresponding photo's element (assumed to be the first child of the parent container)
-  const photo = parentContainer.firstElementChild;
-
-  // Add a class to trigger the animation (e.g., "animate-photo")
-  photo.classList.add("animate-photo");
-
-  // After a certain duration, remove the class to reset the animation
-  setTimeout(() => {
-    photo.classList.remove("animate-photo");
-  }, 1000); // Change 1000 to the desired animation duration in milliseconds
-}
-
 
 // Funktion, um die Animation zu stoppen, wenn die Maus nicht mehr über dem Bild ist
 function stopFloat(ingredient) {
