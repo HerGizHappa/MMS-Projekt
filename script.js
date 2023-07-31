@@ -17,9 +17,6 @@ function stopFloat(ingredient) {
   ingredient.style.animation = "";
 }
 
-
-
-
 // JavaScript-Code für die Aktion, wenn der Button geklickt wird.
 document.getElementById("drinkButton1").addEventListener("click", function() {
   // Holen Sie sich das Bild-Element durch seine ID.
@@ -63,4 +60,5 @@ document.getElementById("drinkButton3").addEventListener("click", function() {
     magic_bilder.src = "pic/cocktail_ginTonic_magic.jpg"; // Pfad zum ursprünglichen Bild
     magic_bilder.alt = "Gin Tonic-magic"; // Alternativer Text für das ursprüngliche Bild
   }
+
 });
