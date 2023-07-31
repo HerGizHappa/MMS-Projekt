@@ -1,6 +1,4 @@
 // JavaScript für die Website
-
-
 // Funktion, um das Dropdown-Menü ein- und auszublenden
 function toggleMenu() {
   var dropdownContent = document.getElementById("dropdown");
