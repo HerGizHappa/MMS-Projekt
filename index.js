@@ -1,65 +1,5 @@
 
-/* Übersicht der Drinks als HTTP-Anfrage */
 
-function fetchData() {
-    fetch('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list')
-    .then(res => res.json())
-    .then(data => {
-        displayData(data.drinks);
-        console.log(data.drinks);
-    })
-    .catch(error => {
-        console.log('Abruf hat nicht funktioniert:', error)
-    })
-}
-
-function displayData(data) {
-    const drinkDiv = document.getElementById("drinks");
-
-    data.forEach(drink => {
-        const heading = document.createElement("h1");
-        heading.innerHTML = drink.strCategory;
-        drinkDiv.appendChild(heading);
-
-      /*   const image = document.createElement("img");
-        image.src = coffee.image;
-        //kinder des div-containers
-        coffeeDiv.appendChild(image) */
-    })
-
-   
-}
-
-
-/* Beispiel-Anfrage für den Drink margarita */
-
-function fetchDataMargarita() {
-    fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
-    .then(res => res.json())
-    .then(dataMargarita => {
-        displayDataMargarita(dataMargarita.drinks);
-        console.log(dataMargarita.drinks);
-    })
-    .catch(error => {
-        console.log('Abruf hat nicht funktioniert:', error)
-    })
-}
-
-function displayDataMargarita(dataMargarita) {
-    const drinkDiv = document.getElementById("drink-margarita");
-
-    const heading = document.createElement("h1");
-    heading.innerHTML = dataMargarita[0].strDrink;
-    drinkDiv.appendChild(heading);
-
-    const image = document.createElement("img");
-    image.src = dataMargarita[0].strDrinkThumb;
-    drinkDiv.appendChild(image);
-
-    const description = document.createElement("p");
-    description.innerHTML = dataMargarita[0].strInstructions;
-    drinkDiv.appendChild(description);
-}
 
 /* Anfrage für den Drink pina colada */
 
@@ -67,7 +7,7 @@ function fetchDataPinaColada() {
     fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=pina colada')
     .then(res => res.json())
     .then(dataPinaColada => {
-        displayDataMargarita(dataPinaColada.drinks);
+        displayDataPinaColada(dataPinaColada.drinks);
         console.log(dataPinaColada.drinks);
     })
     .catch(error => {
@@ -76,7 +16,7 @@ function fetchDataPinaColada() {
 }
 
 function displayDataPinaColada(dataPinaColada) {
-    const drinkDiv = document.getElementById("drink-Pina Colada");
+    const drinkDiv = document.getElementById("drink-pina");
 
     const heading = document.createElement("h1");
     heading.innerHTML = dataPinaColada[0].strDrink;
@@ -94,7 +34,7 @@ function fetchDataMojito() {
     fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=mojito')
     .then(res => res.json())
     .then(dataMojito => {
-        displayDataMargarita(dataMojito.drinks);
+        displayDataMojito(dataMojito.drinks);
         console.log(dataMojito.drinks);
     })
     .catch(error => {
