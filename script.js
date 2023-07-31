@@ -4,6 +4,51 @@
 function toggleMenu() {
   var dropdownContent = document.getElementById("dropdown");
   dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+
+  // Funktion, um zum entsprechenden Abschnitt der Website zu scrollen
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
+
+  // Funktion, um das Dropdown-Menü zu schließen, wenn ein Link angeklickt wird
+  function closeDropdown() {
+    const dropdown = document.getElementById('dropdown');
+    dropdown.style.display = 'none';
+  }
+
+  // Funktion zum Toggle des Dropdown-Menüs
+  function toggleMenu() {
+    const dropdown = document.getElementById('dropdown');
+    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+      dropdown.style.display = 'block';
+    } else {
+      dropdown.style.display = 'none';
+    }
+  }
+
+  // Event Listener für das Klicken auf die Links in der Navigation
+  document.querySelectorAll('.menu-item a').forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const targetSection = link.getAttribute('href').replace('#', '');
+      scrollToSection(targetSection);
+      closeDropdown();
+    });
+  });
+
+  // Event Listener für das Klicken außerhalb des Dropdown-Menüs, um es zu schließen
+  window.addEventListener('click', (event) => {
+    const dropdown = document.getElementById('dropdown');
+    if (!event.target.matches('.menu-icon') && dropdown.style.display === 'block') {
+      dropdown.style.display = 'none';
+    }
+  });  
 }
 // Funktion, um die Zutaten schweben zu lassen
 function floatIngredient(ingredient) {
