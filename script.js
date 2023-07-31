@@ -6,16 +6,6 @@ function toggleMenu() {
   dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
 }
 
-// Funktion, um die Zutaten schweben zu lassen
-function floatIngredient(ingredient) {
-  ingredient.style.animation = "float 3s ease-in-out infinite";
-}
-
-// Funktion, um die Animation zu stoppen, wenn die Maus nicht mehr über dem Bild ist
-function stopFloat(ingredient) {
-  ingredient.style.animation = "";
-}
-
 //Beginn Api.
 /* Beispiel-Anfrage für den Drink pina colada */
 function fetchDataPinaColada(){
@@ -52,6 +42,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Ende Api.
 
+
+
+// Funktion, um die Zutaten schweben zu lassen
+function floatIngredient(ingredient) {
+  ingredient.style.animation = "float 3s ease-in-out infinite";
+}
+
+// Funktion, um die Animation zu stoppen, wenn die Maus nicht mehr über dem Bild ist
+function stopFloat(ingredient) {
+  ingredient.style.animation = "";
+}
 
 // JavaScript-Code für die Aktion, wenn der Button geklickt wird.
 document.getElementById("drinkButton1").addEventListener("click", function() {
