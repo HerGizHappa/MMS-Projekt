@@ -10,58 +10,40 @@ function floatIngredient(ingredient) {
   ingredient.style.animation = "float 3s ease-in-out infinite";
 }
 
-// Funktion zum Abrufen der Zubereitungsschritte von der API
-function fetchPreparationSteps(cocktailName, cocktailId) {
-  const apiUrl = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailName}`;
-
-  fetch(apiUrl)
-    .then((response) => response.json())
-    .then((data) => {
+// Funktion, um die Animation zu stoppen, wenn die Maus nicht mehr über dem Bild ist
+function stopFloat(ingredient) {
+  ingredient.style.animation = ""; 
+}
+// Funktion, um die Zubereitung für einen einzelnen Cocktail abzurufen und anzuzeigen
+function getCocktailInstructions(cocktailName, containerId) {
+  fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailName}`)
+    .then(response => response.json())
+    .then(data => {
       const cocktail = data.drinks[0];
-      const steps = getCocktailPreparationSteps(cocktail);
-      showSteps(steps, cocktailId);
+      const container = document.getElementById(containerId);
+
+      if (cocktail) {
+        const instructions = cocktail.strInstructions;
+        const cocktailInstructions = `
+          <h2>${cocktail.strDrink}</h2>
+          <p>${instructions}</p>
+        `;
+        container.innerHTML = cocktailInstructions;
+      } else {
+        container.innerHTML = "<p>Zubereitungsinformationen für diesen Cocktail sind nicht verfügbar.</p>";
+      }
     })
-    .catch((error) => {
-      console.error('Error fetching data:', error);
+    .catch(error => {
+      console.error(`Fehler beim Abrufen der Zubereitungsinformationen für ${cocktailName}:`, error);
     });
 }
 
-// Funktion zum Extrahieren der Zubereitungsschritte aus dem Cocktail-Objekt
-function getCocktailPreparationSteps(cocktail) {
-  const steps = [];
-  for (let i = 1; i <= 15; i++) {
-    const step = cocktail[`strInstructions${i}`];
-    if (step && step.trim() !== '') {
-      steps.push(step.trim());
-    } else {
-      // Wenn kein weiterer Schritt vorhanden ist, brechen wir die Schleife ab.
-      break;
-    }
-  }
-  return steps;
-}
-
-// Funktion zum Anzeigen der Zubereitungsschritte für einen Cocktail
-function showSteps(cocktailSteps, cocktailId) {
-  const stepsList = document.getElementById(cocktailId);
-
-  // Zuerst leeren wir die Liste, um sicherzustellen, dass keine alten Schritte angezeigt werden.
-  stepsList.innerHTML = '';
-
-  // Füge jeden Zubereitungsschritt als Listenelement zur Liste hinzu
-  cocktailSteps.forEach((step) => {
-    const li = document.createElement('li');
-    li.textContent = step;
-    stepsList.appendChild(li);
-  });
-}
-
-// Aufruf der Funktion zum Abrufen der Zubereitungsschritte für jeden Cocktail, wenn die Seite geladen ist
-window.onload = function() {
-  fetchPreparationSteps('Pina Colada', 'pinaColadaSteps');
-  fetchPreparationSteps('Mojito', 'mojitoSteps');
-  fetchPreparationSteps('Gin Tonic', 'ginTonicSteps');
-};
+// Aufruf der Funktionen, um die Zubereitung für die einzelnen Cocktails abzurufen, wenn das DOM geladen ist
+document.addEventListener("DOMContentLoaded", () => {
+  getCocktailInstructions("Pina Colada", "drink-pinacolada");
+  getCocktailInstructions("Mojito", "drink-mojito");
+  getCocktailInstructions("Gin Tonic", "drink-gintonic");
+});
 
 
 
@@ -79,7 +61,6 @@ document.getElementById("drinkButton1").addEventListener("click", function() {
     magic_bilder.alt = "Pina Colada-magic"; // Alternativer Text für das ursprüngliche Bild
   }
 });
-
 
 // JavaScript-Code für die Aktion, wenn der Button geklickt wird.
 document.getElementById("drinkButton2").addEventListener("click", function() {
@@ -108,4 +89,3 @@ document.getElementById("drinkButton3").addEventListener("click", function() {
     magic_bilder.alt = "Gin Tonic-magic"; // Alternativer Text für das ursprüngliche Bild
   }
 }); 
-
