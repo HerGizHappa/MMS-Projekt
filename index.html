@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cocktail Maker</title>
   <meta name="description" content="Erstelle leckere Cocktails mit dem Cocktail Maker. Finde die besten Rezepte für Pina Colada, Mojito und Gin Tonic.">
   <meta name="keywords" content="Cocktail, Pina Colada, Mojito, Gin Tonic, Rezepte, Cocktail Maker">
@@ -12,12 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+  <script src="https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
   <div class="header-content">
     <div class="header-brand">
-      <img class="logo" src="pic/logocm.png"  alt="Logo von der Website" /></a>
+      <img class="logo" src="pic/Cocktails mit Anna & Gizem.png"  alt="Logo von der Website" /></a>
     </div>
       <h1>Cocktail Maker</h1>
       <div class="menu-icon" onclick="toggleMenu()">
@@ -80,7 +82,7 @@
             </div>
       </div>
         <!-- Hier kommt der API-Text von Pina Colada -->
-        <div id="drink-pinacolada" class="drink-pinacolada"></div>
+		<div id="drink-pinacolada" class="drink-pinacolada"></div>
 
     <!-- Container für Mojito -->
       <div class="cocktail-info">
@@ -184,16 +186,19 @@
     </section>
 	</div>
   </main>
-
   <footer>
   <div class="impressum-container">
       <h2>Impressum</h2>
-      <!-- Hier kommt der Inhalt des Impressums -->
-      <!-- Angaben gemäß § 5 TMG, Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV, Haftungsausschluss, Datenschutzerklärung, etc. -->
-    </div>
+      <p>Cocktail Maker</p>
+      <p>Hannover</p>
+    <br>
+    <p>Verantwortlich für den Inhalt</p>
+    <p>Anna und Gizem</p>
+    
+<p>RECHTLICHER HINWEIS</p>
+<p align ="left">Die Inhalte dieser Website sind fiktiv und nur für die Prüfungleistung im Modul Multimedia im Studiengang Informationsmanagement der Hochschule Hannover erstellt worden. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen. Wir sind keine Dienstanbieter und für gespeicherte Daten die uns übermittelt werden übernehmen wir keine Gewähr.</p>
+  </div>"
   </footer>
-
   <script src="script.js"></script>
 </body>
-
 </html>
