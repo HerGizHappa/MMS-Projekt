@@ -60,6 +60,7 @@ function floatIngredient(ingredient) {
 function stopFloat(ingredient) {
   ingredient.style.animation = ""; 
 }
+
 // Funktion, um die Zubereitung für einen einzelnen Cocktail abzurufen und anzuzeigen
 function getCocktailInstructions(cocktailName, containerId) {
   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailName}`)
