@@ -277,6 +277,10 @@ footer {
   text-align: center;	
   font-size: small;
 }
+.impressum-container{
+  background-color: #262626;
+  padding: 10px;
+}
 
 .footer-links a {
   text-decoration: none;
