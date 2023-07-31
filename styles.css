@@ -21,7 +21,7 @@ header {
   align-items: center;
 }
 
-.header-brand {
+.logo {
   position:-webkit-sticky;
   height: 92px;
   width: 102px;
