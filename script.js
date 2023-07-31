@@ -16,41 +16,6 @@ function stopFloat(ingredient) {
   ingredient.style.animation = "";
 }
 
-
-/* Beispiel-Anfrage für den Drink pina colada */
-function fetchDataPinaColada(){
-  fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=pina%20colada')
-  .then(res => res.json())
-  .then(dataPinaColada => {
-      displayDataPinaColada(dataPinaColada.drinks);
-      console.log(dataPinaColada.drinks);
-  })
-  .catch(error => {
-      console.log('Abruf hat nicht funktioniert:', error)
-  })
-}
-
-function displayDataPinaColada(dataPinaColada) {
-  const drinkDiv = document.getElementById("drink-pinacolada");
-
-  const heading = document.createElement("h1");
-  heading.innerHTML = dataPinaColada[0].strDrink;
-  drinkDiv.appendChild(heading);
-
-  const description = document.createElement("p");
-  description.innerHTML = dataPinaColada[0].strInstructions;
-  drinkDiv.appendChild(description);
-}
-
-/* allgemeiner JavaScript Aufruf für alle Events */
-
-document.addEventListener("DOMContentLoaded", function() {
-  fetchData();
-  /*fetchDataMargarita();*/
-  fetchDataPinaColada();
-});
-
-
 // JavaScript-Code für die Aktion, wenn der Button geklickt wird.
 document.getElementById("drinkButton1").addEventListener("click", function() {
   // Holen Sie sich das Bild-Element durch seine ID.
