@@ -211,6 +211,24 @@ ul {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-20px); }
 }
+/* Example animation */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to the photo when the class is added */
+.animate-photo {
+  animation: shake 0.5s ease-in-out; /* Change 0.5s to the desired animation duration */
+}
+
 
 /* animierten Bilder */
 .animated-image img {
