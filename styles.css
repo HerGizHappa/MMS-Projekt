@@ -192,7 +192,6 @@ ul {
   padding: 10px; 
   box-sizing: border-box;
 }
-
 #floating-ingredientsgt{
   transform: translate(-30%, -150%);
   float: right; 

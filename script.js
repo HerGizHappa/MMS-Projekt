@@ -80,6 +80,7 @@ document.getElementById("drinkButton1").addEventListener("click", function() {
   }
 });
 
+
 // JavaScript-Code für die Aktion, wenn der Button geklickt wird.
 document.getElementById("drinkButton2").addEventListener("click", function() {
   // Holt sich Bild-Element durch seine ID.
