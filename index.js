@@ -7,7 +7,7 @@ function fetchDataPinaColada() {
     fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=pina colada')
     .then(res => res.json())
     .then(dataPinaColada => {
-        displayDataPinaColada(dataPinaColada.drinks);
+        displayDataMargarita(dataPinaColada.drinks);
         console.log(dataPinaColada.drinks);
     })
     .catch(error => {
@@ -16,7 +16,7 @@ function fetchDataPinaColada() {
 }
 
 function displayDataPinaColada(dataPinaColada) {
-    const drinkDiv = document.getElementById("drink-pina");
+    const drinkDiv = document.getElementById("drink-Pina Colada");
 
     const heading = document.createElement("h1");
     heading.innerHTML = dataPinaColada[0].strDrink;
@@ -34,7 +34,7 @@ function fetchDataMojito() {
     fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=mojito')
     .then(res => res.json())
     .then(dataMojito => {
-        displayDataMojito(dataMojito.drinks);
+        displayDataMargarita(dataMojito.drinks);
         console.log(dataMojito.drinks);
     })
     .catch(error => {
